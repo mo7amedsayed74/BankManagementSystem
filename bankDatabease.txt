@@ -1,0 +1,14 @@
+#create Database BANKOOK;
+#create table management(name1 varchar(300) not null,pass int not null,id int primary key unique ,salary int not null,tmp varchar(300));
+#create table info(name varchar(20) references client (name),id int references client(id),balance int not null,account_type varchar(30) );
+#insert into management values("asaewwedd",414234,852132,5222,"asdedw");
+#UPDATE management SET name1 = "fghjk",pass=567,salary=567    WHERE id=30307;
+#drop table client;
+#create table client (National_ID varchar(30) primary key , name varchar(30) not null);
+#alter table client add column (gender varchar(6),phone varchar(30) ,address varchar(30), acc_type varchar(30) ,PIN int unique not null, service varchar(30));
+#alter table client add column(city varchar(30));
+#drop table info;
+#create table info(name2 varchar(30) ,id varchar(30) references client(National_ID),balance int not null,account_type varchar(30) ,PIN int);
+select* from client;
+select* from management;
+select* from info;
